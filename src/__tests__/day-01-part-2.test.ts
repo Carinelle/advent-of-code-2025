@@ -1,7 +1,7 @@
 ﻿import {describe, it, expect} from 'vitest';
-import {countZeroOccurrencesOnEnd} from "../challenges";
+import {countAllZeroOccurrences} from "../challenges";
 
-describe('Day 01 Part 1 Logic', () => {
+describe('Day 01 Part 2 Logic', () => {
     it('should count zero occurrences with lower values from AoC example', () => {
         const input =
 `L68
@@ -14,7 +14,7 @@ L1
 L99
 R14
 L82`;
-        expect(countZeroOccurrencesOnEnd(input)).toBe(3);
+        expect(countAllZeroOccurrences(input)).toBe(6);
     });
 
     it('should count zero occurrences with bigger values than from AoC example', () => {
@@ -22,6 +22,6 @@ L82`;
 `R150
 L300
 L250`;
-        expect(countZeroOccurrencesOnEnd(input)).toBe(2);
+        expect(countAllZeroOccurrences(input)).toBe(7);
     });
 });

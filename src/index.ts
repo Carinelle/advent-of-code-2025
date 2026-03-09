@@ -1,3 +1,4 @@
-import {solveDay01} from "./challenges/day-01-part-1";
+import * as Challenges from './challenges';
 
-solveDay01();
+console.log("Day 01 - Part 1:", Challenges.solveDay01Part1());
+console.log("Day 01 - Part 2:", Challenges.solveDay01Part2());

@@ -1,6 +1,6 @@
 ﻿import {getInput} from "../utils/file-input-helper";
 
-export function countZeroOccurrences(input: string): number {
+export function countZeroOccurrencesOnEnd(input: string): number {
     const lines = input.trim().split('\n');
     const range = 100;
     let currentPosition = 50;
@@ -16,11 +16,10 @@ export function countZeroOccurrences(input: string): number {
             zeroOccurrences++;
         }
     }
-    console.log(zeroOccurrences);
     return zeroOccurrences;
 }
 
-export function solveDay01(): number {
+export function solveDay01Part1(): number {
     const input = getInput(1);
-    return countZeroOccurrences(input);
+    return countZeroOccurrencesOnEnd(input);
 }
