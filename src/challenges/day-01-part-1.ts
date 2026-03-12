@@ -16,6 +16,7 @@ export function countZeroOccurrencesOnEnd(input: string): number {
             zeroOccurrences++;
         }
     }
+
     return zeroOccurrences;
 }
 

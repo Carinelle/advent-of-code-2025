@@ -2,7 +2,6 @@
 
 export function countAllZeroOccurrences(input: string): number {
     const lines = input.trim().split('\n');
-    const range = 100;
     let currentPosition = 50;
     let zeroOccurrences = 0;
 
@@ -25,6 +24,7 @@ export function countAllZeroOccurrences(input: string): number {
             }
         }
     }
+
     return zeroOccurrences;
 }
 
