@@ -2,7 +2,7 @@
 
 export function sumJoltageTwelveBatteries(input: string): number {
     const banks = input.trim().split(/\r?\n/);
-    let totalOutputJoltage: number = 0;
+    let totalOutputJoltage = 0;
 
     for (const bank of banks) {
         let largestNumber: number[] = new Array(12).fill(0);
